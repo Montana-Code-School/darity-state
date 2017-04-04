@@ -1,0 +1,19 @@
+{
+  "name": "darity-state",
+  "version": "1.0.0",
+  "description": "State management components shared between mobile and web implementations",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Montana-Code-School/darity-state.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Montana-Code-School/darity-state/issues"
+  },
+  "homepage": "https://github.com/Montana-Code-School/darity-state#readme"
+}
