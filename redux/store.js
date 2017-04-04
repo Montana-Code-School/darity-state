@@ -2,8 +2,8 @@ import { createStore } from 'redux';
 import loginReducer from './reducer';
 
 var startingState = {
- username: "",
- token: ""
+ username: null,
+ token: null
 }
 
 
