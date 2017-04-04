@@ -1,1 +1,1 @@
-module.exports = 'this is only a test';
+module.exports = 'this is a different test';
