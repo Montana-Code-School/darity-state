@@ -1,3 +1,5 @@
 const loginAction = (username, token) => ({type: 'Login', username: username, token: token})
 
-export default {loginAction}
+const registerAction = (username, email, token) => ({type: 'Register', username: username, email: email, token: token})
+
+export default {loginAction, registerAction}

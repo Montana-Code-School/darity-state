@@ -3,6 +3,7 @@ import loginReducer from './reducer';
 
 var startingState = {
  username: null,
+ email: null,
  token: null
 }
 
