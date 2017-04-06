@@ -3,6 +3,10 @@ import loginReducer from './reducer';
 
 var startingState = {
  username: null,
+ currentProfile: {
+ 	current: [],
+ 	past: []
+ },
  email: null,
  token: null
 }

@@ -1,9 +1,9 @@
 import store from './redux/store'
 import User from './components/User'
 import loginReducer from './redux/reducer'
-
+import DisplayUser './components/DisplayUser'
 module.exports = {
 	store: store,
-	User: User
-
+	User: User,
+	DisplayUser: DisplayUser
 }
