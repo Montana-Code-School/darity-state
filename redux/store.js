@@ -7,7 +7,9 @@ var startingState = {
  currentProfile: {
  	current: [],
  	past: []
- }
+ },
+ email: null,
+ token: null
 }
 
 

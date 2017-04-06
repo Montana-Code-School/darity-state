@@ -3,14 +3,17 @@ import { loginAction } from '../redux/actions'
 
 mapStateToProps(state){
 	return {
-		username: state.username
+		username: state.username,
+		token: state.token,
+		email: state.email
 	}
 }
 
 
 mapDispatchToProps(dispatch){
 	return {
-		login: (username) => dispatch(loginAction(username)) 
+		login: (username) => dispatch(loginAction(username)), 
+		register: (username, email) => dispatch(registerAction(username, email))
 	}
 }
 
