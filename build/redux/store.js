@@ -18,4 +18,4 @@ var startingState = {
   token: null
 };
 
-module.exports = (0, _redux.createStore)(reducer, startingState, window && window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+module.exports = (0, _redux.createStore)(_reducer2.default, startingState, window && window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
