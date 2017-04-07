@@ -1,9 +1,3 @@
-import store from './redux/store'
-import User from './components/User'
-import loginReducer from './redux/reducer'
-import DisplayUser './components/DisplayUser'
-module.exports = {
-	store: store,
-	User: User,
-	DisplayUser: DisplayUser
-}
+const state = require('./build/index')
+
+module.exports = state;
