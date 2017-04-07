@@ -1,5 +1,5 @@
 import { createStore } from 'redux';
-import loginReducer from './reducer';
+import reducer from './reducer';
 
 var startingState = {
  username: null,
