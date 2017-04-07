@@ -1,10 +1,10 @@
 import { connect } from 'react-redux';
 
-mapStateToProps = (state) => ({
+const mapStateToProps = (state) => ({
 	currentProfile : state.currentProfile
 })
 
-mapDispatchToProps (dispatch) => ({
+const mapDispatchToProps = (dispatch) => ({
 	viewProfile : (profile) => dispatch({
 		type: 'ViewProfile',
 		profile: profile

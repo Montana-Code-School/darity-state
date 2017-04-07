@@ -8,7 +8,7 @@ function loginReducer(state, action) {
 			return Object.assign({}, state, {currentProfile: action.profile}) 
 		case "register":
 			return Object.assign({}, state, {username: action.username, email: action.email, token:action.token})
-		default 
+		default:
 			return state 
 	}
 }
@@ -22,4 +22,4 @@ function loginReducer(state, action) {
 // 	}
 // } 
 
-module.exports loginReducer
+export default loginReducer
