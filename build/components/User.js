@@ -16,7 +16,7 @@ var mapStateToProps = function mapStateToProps(state) {
 		};
 };
 
-mapDispatchToProps = function mapDispatchToProps(dispatch) {
+var mapDispatchToProps = function mapDispatchToProps(dispatch) {
 		return {
 				login: function login(username) {
 						return dispatch((0, _actions.loginAction)(username));
