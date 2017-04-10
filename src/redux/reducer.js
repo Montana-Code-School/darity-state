@@ -1,25 +1,16 @@
 function loginReducer(state, action) {
 	switch(action.type){
-		case "login":
+		case "Login":
 			return Object.assign({}, state, {username: action.username, token:action.token})
-		case "logout":
+		case "Logout":
 			return Object.assign({}, state, {username: "", token: ""})
 		case "DisplayUser":
 			return Object.assign({}, state, {currentProfile: action.profile}) 
-		case "register":
+		case "Register":
 			return Object.assign({}, state, {username: action.username, email: action.email, token:action.token})
 		default:
 			return state 
 	}
 }
-
-// function registerReducer(state, action) {
-// 	switch(action.type){
-// 		case "register":
-// 			return Object.assign({}, state, {username: action.username, email: action.email, token:action.token})
-// 		default 
-// 			return state 
-// 	}
-// } 
 
 export default loginReducer
