@@ -13,13 +13,8 @@ function loginReducer(state, action) {
 	}
 }
 
-// function registerReducer(state, action) {
-// 	switch(action.type){
-// 		case "register":
-// 			return Object.assign({}, state, {username: action.username, email: action.email, token:action.token})
-// 		default 
-// 			return state 
-// 	}
-// } 
 
 export default loginReducer
+
+
+
