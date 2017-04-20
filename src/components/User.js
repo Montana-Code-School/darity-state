@@ -2,14 +2,16 @@ import { connect } from 'react-redux'
 import { loginAction } from '../redux/actions'
 
 const mapStateToProps = state =>( {
-		username: state.username,
+		name: state.name,
 		token: state.token,
-		email: state.email
+		email: state.email, 
+		is_npo: state.is_npo, 
+		profilepic_path: state.profilepic_path
 	})
 
 const mapDispatchToProps = dispatch =>({
-		login: (username) => dispatch(loginAction(username)), 
-		register: (username, email) => dispatch(registerAction(username, email))
+		login: (name) => dispatch(loginAction(name)), 
+		register: (name, email, is_npo, profilepic_path) => dispatch(registerAction(name, email, is_npo, profilepic_path))
 	})
 
 
