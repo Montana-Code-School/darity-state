@@ -11,8 +11,8 @@ const mapStateToProps = state =>( {
 	})
 
 const mapDispatchToProps = dispatch =>({
-		login: (name) => dispatch(loginAction(name)), 
-		register: (name, email, is_npo, profilepic_path) => dispatch(registerAction(name, email, is_npo, profilepic_path))
+		login: (name, token) => dispatch(loginAction(name, token)), 
+		register: (name, email, is_npo, profilepic_path, token) => dispatch(registerAction(name, email, is_npo, profilepic_path, token))
 	})
 
 
