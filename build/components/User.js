@@ -10,19 +10,21 @@ var _actions = require('../redux/actions');
 
 var mapStateToProps = function mapStateToProps(state) {
 		return {
-				username: state.username,
+				name: state.name,
 				token: state.token,
-				email: state.email
+				email: state.email,
+				is_npo: state.is_npo,
+				profilepic_path: state.profilepic_path
 		};
 };
 
 var mapDispatchToProps = function mapDispatchToProps(dispatch) {
 		return {
-				login: function login(username) {
-						return dispatch((0, _actions.loginAction)(username));
+				login: function login(name) {
+						return dispatch((0, _actions.loginAction)(name));
 				},
-				register: function register(username, email) {
-						return dispatch(registerAction(username, email));
+				register: function register(name, email, is_npo, profilepic_path) {
+						return dispatch((0, _actions.registerAction)(name, email, is_npo, profilepic_path));
 				}
 		};
 };

@@ -3,12 +3,16 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-var loginAction = function loginAction(username, token) {
-  return { type: 'Login', username: username, token: token };
+var loginAction = function loginAction(name, token) {
+  return { type: 'Login', name: name, token: token };
 };
 
-var registerAction = function registerAction(username, email, token) {
-  return { type: 'Register', username: username, email: email, token: token };
+var registerAction = function registerAction(name, email, is_npo, profilepic_path, token) {
+  return { type: 'Register', name: name, email: email, is_npo: is_npo, profilepic_path: profilepic_path, token: token };
 };
 
-exports.default = { loginAction: loginAction, registerAction: registerAction };
+var displayUserAction = function displayUserAction(profile) {
+  return { type: 'ViewProfile', profile: profile };
+};
+
+exports.default = { loginAction: loginAction, registerAction: registerAction, displayUserAction: displayUserAction };
