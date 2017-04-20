@@ -1,8 +1,5 @@
 "use strict";
 
-Object.defineProperty(exports, "__esModule", {
-	value: true
-});
 function loginReducer(state, action) {
 	switch (action.type) {
 		case "Login":
@@ -18,4 +15,4 @@ function loginReducer(state, action) {
 	}
 }
 
-exports.default = loginReducer;
+module.exports = loginReducer;

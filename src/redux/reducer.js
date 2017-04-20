@@ -13,7 +13,6 @@ function loginReducer(state, action) {
 	}
 }
 
-
-export default loginReducer
+module.exports = loginReducer
 
 

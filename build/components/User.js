@@ -1,9 +1,5 @@
 'use strict';
 
-Object.defineProperty(exports, "__esModule", {
-		value: true
-});
-
 var _reactRedux = require('react-redux');
 
 var _actions = require('../redux/actions');
@@ -29,4 +25,4 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch) {
 		};
 };
 
-exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps);
+module.exports = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps);
