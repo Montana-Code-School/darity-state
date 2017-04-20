@@ -4,4 +4,4 @@ const registerAction = (name, email, is_npo, profilepic_path, token) => ({type: 
 
 const displayUserAction = (profile) => ({type: 'ViewProfile', profile: profile})
 
-export default {loginAction, registerAction, displayUserAction}
+module.exports = {loginAction, registerAction, displayUserAction}

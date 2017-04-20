@@ -1,8 +1,5 @@
 'use strict';
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
 var loginAction = function loginAction(name, token) {
   return { type: 'Login', name: name, token: token };
 };
@@ -15,4 +12,4 @@ var displayUserAction = function displayUserAction(profile) {
   return { type: 'ViewProfile', profile: profile };
 };
 
-exports.default = { loginAction: loginAction, registerAction: registerAction, displayUserAction: displayUserAction };
+module.exports = { loginAction: loginAction, registerAction: registerAction, displayUserAction: displayUserAction };
