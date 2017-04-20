@@ -2,12 +2,14 @@ import { createStore } from 'redux';
 import reducer from './reducer';
 
 var startingState = {
- username: null,
+ name: null,
  currentProfile: {
  	current: [],
  	past: []
  },
  email: null,
+ is_npo: null, 
+ profilepic_path: null,
  token: null
 }
 
