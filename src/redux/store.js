@@ -11,7 +11,12 @@ var startingState = {
  is_npo: null,
  bio: null, 
  profilepic_path: null,
- token: null
+ token: null, 
+ npo_id: null, 
+ user_dare_id: null, 
+ broadcaster_id: null,
+ pledge_amount_threshold: null, 
+ video_path: null 
 }
 
 

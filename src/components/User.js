@@ -2,6 +2,7 @@ import { connect } from 'react-redux'
 import { loginAction } from '../redux/actions'
 import { registerAction } from '../redux/actions'
 import { displayUserAction } from '../redux/actions'
+import { displayUserDares } from '../redux/actions'
 
 
 const mapStateToProps = state =>( {

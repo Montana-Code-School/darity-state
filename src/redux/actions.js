@@ -4,4 +4,6 @@ const registerAction = (name, email, bio, is_npo, profilepic_path, token) => ({t
 
 const displayUserAction = (name, bio, profilepic_path) => ({type: 'DisplayUser', name: name, bio:bio, profilepic_path: profilepic_path})
 
-module.exports = {loginAction, registerAction, displayUserAction}
+const displayUserDares = (npo_id, user_dare_id, broadcaster_id, pledge_amount_threshold, video_path) => ({type: 'DisplayUserDares', npo_id: npo_id, user_dare_id: user_dare_id, broadcaster_id: broadcaster_id, pledge_amount_threshold: pledge_amount_threshold, video_path: video_path})
+
+module.exports = {loginAction, registerAction, displayUserAction, displayUserDares}
