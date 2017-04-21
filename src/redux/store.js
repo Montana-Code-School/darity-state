@@ -8,7 +8,8 @@ var startingState = {
  	past: []
  },
  email: null,
- is_npo: null, 
+ is_npo: null,
+ bio: null, 
  profilepic_path: null,
  token: null
 }
