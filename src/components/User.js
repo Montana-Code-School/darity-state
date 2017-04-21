@@ -5,14 +5,15 @@ import { registerAction } from '../redux/actions'
 const mapStateToProps = state =>( {
 		name: state.name,
 		token: state.token,
-		email: state.email, 
+		email: state.email,
+		bio: state.bio, 
 		is_npo: state.is_npo, 
 		profilepic_path: state.profilepic_path
 	})
 
 const mapDispatchToProps = dispatch =>({
 		login: (name, token) => dispatch(loginAction(name, token)), 
-		register: (name, email, is_npo, profilepic_path, token) => dispatch(registerAction(name, email, is_npo, profilepic_path, token))
+		register: (name, email, bio, is_npo, profilepic_path, token) => dispatch(registerAction(name, email, bio, is_npo, profilepic_path, token))
 	})
 
 
