@@ -17,8 +17,8 @@ var mapStateToProps = function mapStateToProps(state) {
 
 var mapDispatchToProps = function mapDispatchToProps(dispatch) {
 		return {
-				login: function login(name, token, is_npo, profilepic_path) {
-						return dispatch((0, _actions.loginAction)(name, token, is_npo, profilepic_path));
+				login: function login(name, token, id, is_npo, profilepic_path) {
+						return dispatch((0, _actions.loginAction)(name, token, id, is_npo, profilepic_path));
 				},
 				register: function register(name, email, bio, is_npo, profilepic_path, token) {
 						return dispatch((0, _actions.registerAction)(name, email, bio, is_npo, profilepic_path, token));

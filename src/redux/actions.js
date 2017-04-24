@@ -1,4 +1,4 @@
-const loginAction = (name, token, is_npo, profilepic_path) => ({type: 'Login', name: name,	token: token, is_npo: is_npo, profilepic_path: profilepic_path})
+const loginAction = (name, token, id, is_npo, profilepic_path) => ({type: 'Login', name: name,	token: token, id: id, is_npo: is_npo, profilepic_path: profilepic_path})
 
 const registerAction = (name, email, bio, is_npo, profilepic_path, token) => ({type: 'Register', name: name, email: email, bio: bio, is_npo: is_npo, profilepic_path: profilepic_path, token: token})
 

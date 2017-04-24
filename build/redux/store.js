@@ -15,6 +15,7 @@ var startingState = {
     past: []
   },
   email: null,
+  id: null,
   is_npo: null,
   bio: null,
   profilepic_path: null,

@@ -3,7 +3,7 @@
 function loginReducer(state, action) {
 	switch (action.type) {
 		case "Login":
-			return Object.assign({}, state, { name: action.name, token: action.token, is_npo: action.is_npo, profilepic_path: action.profilepic_path });
+			return Object.assign({}, state, { name: action.name, token: action.token, id: action.id, is_npo: action.is_npo, profilepic_path: action.profilepic_path });
 		case "Logout":
 			return Object.assign({}, state, { name: "", token: "" });
 		case "DisplayUser":
