@@ -1,7 +1,7 @@
 'use strict';
 
-var loginAction = function loginAction(name, token, profilepic_path, is_npo) {
-  return { type: 'Login', name: name, token: token, profilepic_path: profilepic_path, is_npo: is_npo };
+var loginAction = function loginAction(name, token, is_npo, profilepic_path) {
+  return { type: 'Login', name: name, token: token, is_npo: is_npo, profilepic_path: profilepic_path };
 };
 
 var registerAction = function registerAction(name, email, bio, is_npo, profilepic_path, token) {
