@@ -8,6 +8,7 @@ var mapStateToProps = function mapStateToProps(state) {
 		return {
 				name: state.name,
 				token: state.token,
+				id: state.id,
 				email: state.email,
 				bio: state.bio,
 				is_npo: state.is_npo,
