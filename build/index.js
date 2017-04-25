@@ -16,10 +16,15 @@ var _DisplayUser = require('./components/DisplayUser');
 
 var _DisplayUser2 = _interopRequireDefault(_DisplayUser);
 
+var _DisplayDare = require('./components/DisplayDare');
+
+var _DisplayDare2 = _interopRequireDefault(_DisplayDare);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 module.exports = {
 	store: _store2.default,
 	User: _User2.default,
-	DisplayUser: _DisplayUser2.default
+	DisplayUser: _DisplayUser2.default,
+	DisplayDare: _DisplayDare2.default
 };
