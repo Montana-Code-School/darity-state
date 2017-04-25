@@ -8,7 +8,9 @@ var _reducer2 = _interopRequireDefault(_reducer);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var startingState = {
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+var startingState = _defineProperty({
   name: null,
   currentProfile: {
     current: [],
@@ -25,6 +27,6 @@ var startingState = {
   broadcaster_id: null,
   pledge_amount_threshold: null,
   video_path: null
-};
+}, 'currentProfile', {});
 
 module.exports = (0, _redux.createStore)(_reducer2.default, startingState, window && window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());

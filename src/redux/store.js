@@ -17,7 +17,8 @@ var startingState = {
  user_dare_id: null,
  broadcaster_id: null,
  pledge_amount_threshold: null,
- video_path: null
+ video_path: null,
+ currentProfile: {}
 }
 
 
