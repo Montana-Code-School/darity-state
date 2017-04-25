@@ -12,6 +12,8 @@ function loginReducer(state, action) {
 			return Object.assign({}, state, {npo_id: action.npo_id, user_dare_id: action.user_dare_id, broadcaster_id: action.broadcaster_id, pledge_amount_threshold: action.pledge_amount_threshold, video_path: action.video_path})
 		case "ViewProfile":
 			return Object.assign({}, state, {currentProfile:action.profile})
+		case "ViewDare":
+			return Object.assign({}, state, {currentDare:action.dare})
 		default:
 			return state
 	}
